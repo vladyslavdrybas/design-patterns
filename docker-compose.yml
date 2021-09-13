@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  php:
+    container_name: patterns.php
+    image: php:7.4-fpm
+    ports:
+      - 8000:8080
+    expose:
+      - 8080
+    command: php -S 0.0.0.0:8080 /var/www/app/public/router.php
+    volumes:
+      - .:/var/www/app
