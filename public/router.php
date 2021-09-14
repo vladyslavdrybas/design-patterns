@@ -2,4 +2,8 @@
 
 declare(strict_types=1);
 
-echo phpinfo();
+require_once('Kernel.php');
+
+$kernel = new Kernel();
+$kernel->setUp();
+$kernel->execute();
