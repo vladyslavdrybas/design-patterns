@@ -7,7 +7,7 @@ use PatternsShare\Executable;
 require_once('Psr4Autoloader.php');
 require_once('functions.php');
 
-class Kernel implements Executable
+class Kernel
 {
     protected Psr4Autoloader $loader;
     protected Executable $endpoint;
